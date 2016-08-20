@@ -1,0 +1,69 @@
+Class of 2020
+	Demographics
+		Gender
+		Race
+		Legal status
+		Religion
+		Socioeconomic status
+		Highest level of parent education
+		Middle school type
+		Sexual orientation
+	Applying to stuy
+		When did you start studying for the SHSAT
+		Method of studying for SHSAT
+		Parent pressure to come to stuy
+	Middle school acedemics
+		Hours spent on hw
+		Favorite subject
+		Hours of sleep
+		Work ethic
+		Class participation
+		Awareness of current events
+	Middle school life and identity
+		Sociability
+		Time watching tv
+		Time on Facebook
+		Position on drugs
+		Position on alchol
+		Will cheat
+		Have cheated
+	Expectations of Stuyvesant and future plans
+		Feel prepared
+		Be among
+		Sleep prediction
+		Will get into a good school
+		Extracurricular
+		Future goals
+Class of 2016
+	Demographics
+		Gender
+		Race
+		Religion
+		Socioeconomic status
+		Middle school type
+		Sexual orientation
+		SO Change
+	Stuyvesant acedemics
+		Stuy GPA
+		College type
+		Middle school preparation
+		Favorite subject change
+		Teacher impact
+	Student life and identity
+		Hours of sleep
+		All nighters
+		Mental health days
+		Mental illness
+		Accedemic dishonesty
+		Sexual activity
+		Drugs
+		Choose stuy again
+Compareson highlights
+	Religion
+	Sexual orientation
+	Favorite subject
+	College
+	Prepared
+	Sleep
+	Drugs and alcohol
+	Acedemic dishonesty
