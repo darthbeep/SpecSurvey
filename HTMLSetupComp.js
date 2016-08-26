@@ -13,10 +13,10 @@ function call() {
 
 function comptopbuttons() {
 	if (view == "freshmen") compHTML += "<a class = 'selected' onclick='demobuttons()'>Freshman Survey</a>";
-	else compHTML += "<a onclick='view = \"freshmen\"; demobuttons();' class='large'>Freshman Survey</a>";
+	else compHTML += "<a onclick='view = \"freshmen\"; demobuttons();' class='large switchbutton'>Freshman Survey</a>";
 	if (view == "seniors") compHTML += "<a class = 'selected' onclick='demobuttons()'>Senior Survey</a>";
-	else compHTML += "<a onclick='view = \"seniors\";allbuttons();' class = 'large'>Senior Survey</a>";
-	if (view == "compare") compHTML += "<a class = 'selected large' onclick='call()'>Comparison Highlights</a>";
+	else compHTML += "<a onclick='view = \"seniors\";allbuttons();' class = 'large switchbutton'>Senior Survey</a>";
+	if (view == "compare") compHTML += "<a class = 'selected large switchbutton' onclick='call()'>Comparison Highlights</a>";
 	else compHTML += "<a onclick='view = \"compare\";call();'>Comparison Highlights</a>";
 }
 function cmakeeverything() {

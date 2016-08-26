@@ -1400,7 +1400,7 @@ $('#sragain').highcharts({
 	title: {
 		//text: 'Would you choose Stuyvesant Again? by number of inspiring teachers'
 	},	xAxis: {
-		categories: ['Yes','No'],
+		categories: ['No','Yes'],
 	},
 	yAxis: {
 		title: {

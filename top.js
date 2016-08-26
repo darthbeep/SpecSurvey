@@ -16,7 +16,7 @@ function frTop() {
 	topHTML += "<div class='spacing'> - </div>";
 	topHTML += "<div class='topcontainer' onclick='location.href=\"#exhead\"'>Expectations of Stuyvesant and Future Plans</div>";
 	topHTML += "<hr class='topline'>";
-	document.getElementById("toptext").innerHTML=topHTML;
+	document.getElementById("frtopdiv").innerHTML=topHTML;
 }
 function srTop() {
 	var topHTML = "";
@@ -32,7 +32,7 @@ function srTop() {
 	topHTML += "<div class='spacing'> - </div>";
 	topHTML += "<div class='topcontainer' onclick='location.href=\"#srlifehead\"'>Student Life and Identity</div>";
 	topHTML += "<hr class='topline'>";
-	document.getElementById("toptext").innerHTML=topHTML;
+	document.getElementById("srtopdiv").innerHTML=topHTML;
 }
 function compTop() {
 	document.getElementById("toptext").innerHTML="";
