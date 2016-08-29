@@ -424,7 +424,7 @@ function exButtons() {
 	frHTML+="<div id='frgoal' class='chart'></div>";
 	if (selectedGoal == "race") raceCaption();
 
-	frHTML += "<div class=\"ending\">The Spectator would like to thank Assistant Principal of Chemistry and Physics Scott Thomas for taking time after the school year ended to allow us to use his Scantron machine. Without his help and patience, the Freshman Survey would have been impossible. We would also like to thank the Big Sib Chairs, as well as all the Big Sibs for helping us distribute the Freshman Survey during Camp Stuy.</div>";
+	frHTML += "<div class=\"ending\">The Spectator would like to thank Assistant Principal of Chemistry and Physics Scott Thomas for taking time after the school year ended to allow us to use his Scantron machine. Without his help and patience, the Freshman Survey would have been impossible. We would also like to thank the Big Sib Chairs, as well as all the Big Sibs for helping us distribute the Freshman Survey during Camp Stuy.</div><br>";
 	document.getElementById("frexdiv").innerHTML = frHTML;
 	frMakeChartsEx();
 }
