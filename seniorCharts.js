@@ -1400,9 +1400,10 @@ $('#sragain').highcharts({
 	title: {
 		//text: 'Would you choose Stuyvesant Again? by number of inspiring teachers'
 	},	xAxis: {
-		categories: ['No','Yes'],
+		categories: ['Yes','No'],
 	},
 	yAxis: {
+		max: 100,
 		title: {
 			text: 'Percent of Students Polled'
 		},
@@ -1430,9 +1431,9 @@ $('#sragain').highcharts({
 	},
 	series: [{
 		 name: '0 - 1',
-		 data: [30.0,70.0]}, {
+		 data: [70.0,30.0]}, {
 		 name: '2 - 3 ',
-		 data: [12.9,87.1]}, {
+		 data: [87.1,12.9]}, {
 		 name: 'More than 4',
-		 data: [3.6,96.4]}]});});
+		 data: [96.4,3.6]}]});});
 }
