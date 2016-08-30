@@ -102,8 +102,8 @@ h1 {
 	width: 600px;
 }
 .ending {
-	font-family: 'Indie Flower';
-	width: 600px;
+	font-family: 'Dosis';
+	width: 620px;
 }
 .xl {
 	width: 225px;
@@ -156,21 +156,19 @@ h1 {
 	margin-right: 10px;
 
 }
-.topcontainer:hover {
-	/*color: blue;*/
-}
+
 #returntospec {
 	position: absolute;
-	top: 50px;
-	left: 75px;
-	padding: 5px;
-	font-size: 30px;
-	background-color: none;
+	top: 25px;
+	left: 30px;
+	padding: 7px;
+	font-size: 24px;
+	background-color: black;
 	color: white;
 	border: 2px solid white;
-	border-radius: 25px;
+	
 	cursor: pointer;
-	font-family: "Roboto Slab";
+	font-family: "Exo";
 }
 .switchbutton {
 	font-size: 20px;
@@ -299,3 +297,5 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
