@@ -23,13 +23,13 @@ function cmakeeverything() {
 	compHTML += "<h1 class='head' id='comphead'>Comparison Highlights</h1>";
 	compNar();
 	compHTML += "<h1 class='comptitle'>Religion</h1>";
-	compHTML += "<table align = 'center'><tr><td valign='top'><div id='frdemo' class='chart'></div></td><td><div id='srdemo' class='crace'></div></td></tr></table>";
+	compHTML += "<table align = 'center'><tr><td valign='top'><div id='frdemo' class='chart' style='height:600px'></div></td><td><div id='srdemo' class='chart' style='height:600px'></div></td></tr></table>";
 	compHTML += "<h1 class='comptitle'>Sexual Orientation</h1>";
 	compHTML += "<table align = 'center'><tr><td><div id='frdemo2' class='chart'></div></td><td><div id='srdemo2' class='chart'></div></td></tr></table>";
 	compHTML += "<h1 class='comptitle'>Favorite Subject</h1>";
 	compHTML += "<table align = 'center'><tr><td><div id='frfav' class='chart'></div></td><td><div id='srfch' class='chart'></div></td></tr></table>";
 	compHTML += "<h1 class='comptitle'>Future Plans</h1>";
-	compHTML += "<table align = 'center'><tr><td valign='top'><div id='frsch' class='chart'></td><td valign='bottom'><div id='srcol' class='colchart'></div></td></tr></table>";
+	compHTML += "<table align = 'center'><tr><td valign='top'><div id='frsch' class='chart' style='height:600px'></td><td valign='bottom'><div id='srcol' class='chart' style='height:600px'></div></td></tr></table>";
 	compHTML += "<h1 class='comptitle'>Academic Preparedness</h1>";
 	compHTML += "<table align = 'center'><tr><td><div id='fracc' class='chart'></div></td><td><div id='srmpr' class='chart'></div></td></tr></table>";
 	compHTML += "<h1 class='comptitle'>Sleep</h1>";
@@ -40,4 +40,5 @@ function cmakeeverything() {
 	compHTML += "<table align = 'center'><tr><td><div id='frdrug' class='chart'></div></td><td><div id='srdrug2' class='chart'></div></td></tr></table>";
 	compHTML += "<h1 class='comptitle'>Academic Dishonesty</h1>";
 	compHTML += "<table align = 'center'><tr><td><div id='frcheat' class='chart'></div></td><td><div id='sracd' class='chart'></div></td></tr></table>";
+	compHTML += "<br><br><br>";
 }
