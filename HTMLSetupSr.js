@@ -52,14 +52,14 @@ function srdemobuttons() {
 	srHTML += "<h1 class='head' id='srdemohead'>Demographics</h1>";
 	srDemoNar();
 	//srHTML+='<h1>Demographics</h1>';
-	if (srSelectedDemo=='gender') srHTML+="<a class='selected' onclick='srSelectedDemo=\"gender\"; srdemobuttons(); '>General</a>";
+	if (srSelectedDemo=='gender') srHTML+="<a class='selected' onclick='srSelectedDemo=\"gender\"; srdemobuttons(); '>Gender</a>";
 	else srHTML+="<a onclick='srSelectedDemo=\"gender\"; srdemobuttons(); '>Gender</a>";
 	if (srSelectedDemo=='race') srHTML+="<a class='selected' onclick='srSelectedDemo=\"race\"; srdemobuttons(); '>Race</a>";
 	else srHTML+="<a onclick='srSelectedDemo=\"race\"; srdemobuttons(); '>Race</a>";
 	if (srSelectedDemo=='rel') srHTML+="<a class='selected' onclick='srSelectedDemo=\"rel\"; srdemobuttons(); '>Religion</a>";
 	else srHTML+="<a onclick='srSelectedDemo=\"rel\"; srdemobuttons(); '>Religion</a>";
-	if (srSelectedDemo=='mid') srHTML+="<a class='selected' onclick='srSelectedDemo=\"mid\"; srdemobuttons(); '>Middle School</a>";
-	else srHTML+="<a onclick='srSelectedDemo=\"mid\"; srdemobuttons(); '>Middle School</a>";
+	if (srSelectedDemo=='mid') srHTML+="<a class='selected' style='width: 130px' onclick='srSelectedDemo=\"mid\"; srdemobuttons(); '>Middle School</a>";
+	else srHTML+="<a onclick='srSelectedDemo=\"mid\"; srdemobuttons();' style='width: 130px'>Middle School</a>";
 	if (srSelectedDemo=='soc') srHTML+="<a class='selected large' onclick='srSelectedDemo=\"soc\"; srdemobuttons(); '>Socioeconomic Status</a>";
 	else srHTML+="<a onclick='srSelectedDemo=\"soc\"; srdemobuttons(); ' class='large'>Socioeconomic Status</a>";
 	if (srSelectedDemo=='seo') srHTML+="<a class='selected large' onclick='srSelectedDemo=\"seo\"; srdemobuttons(); '>Sexual Orientation</a>";
@@ -86,7 +86,7 @@ function srdemobuttons() {
 	if (srSelectedSco=='race') srHTML+="<a class='selected' onclick='srSelectedSco=\"race\"; srdemobuttons(); '>By Race</a>";
 	else srHTML+="<a onclick='srSelectedSco=\"race\"; srdemobuttons(); '>By Race</a>";
 	srHTML+="<div id='srsco' class='chart'></div>";*/
-	srHTML += "<h1 class='head' id='sracchead'>Stuyvesant Academics</h1>";
+	srHTML += "<br><br><hr><h1 class='head' id='sracchead'>Stuyvesant Academics</h1>";
 	srAcNar();
 	srHTML+='<h1>What was your Stuyvesant GPA?</h1>';
 	//if (srSelectedGpa=='gpa') srHTML+="<a class='selected' onclick='srSelectedGpa=\"gpa\"; srdemobuttons(); '>GPA</a>";
@@ -125,15 +125,15 @@ function srdemobuttons() {
 
 function srlifebuttons() {
 	srHTML = "";
-	srHTML += "<h1 class='head' id='srlifehead'>Student Life and Identity</h1>";
+	srHTML += "<br><br><hr><h1 class='head' id='srlifehead'>Student Life and Identity</h1>";
 	srLifeNar();
 	srHTML+='<h1>How many hours of sleep did you get a night?</h1>';
 	if (srSelectedSleep=='und') srHTML+="<a class='selected large' onclick='srSelectedSleep=\"und\"; srlifebuttons(); '>As an Underclassman</a>";
 	else srHTML+="<a onclick='srSelectedSleep=\"und\"; srlifebuttons(); ' class='large'>As an Underclassman</a>";
 	if (srSelectedSleep=='upp') srHTML+="<a class='selected large' onclick='srSelectedSleep=\"upp\"; srlifebuttons(); '>As an Upperclassman</a>";
 	else srHTML+="<a onclick='srSelectedSleep=\"upp\"; srlifebuttons(); ' class='large'>As an Upperclassman</a>";
-	if (srSelectedSleep=='gpa') srHTML+="<a class='selected large' onclick='srSelectedSleep=\"gpa\"; srlifebuttons(); '>As an Upperclassman By GPA</a>";
-	else srHTML+="<a onclick='srSelectedSleep=\"gpa\"; srlifebuttons(); ' class='large'>As an Upperclassman By GPA</a>";
+	if (srSelectedSleep=='gpa') srHTML+="<a class='selected' style='width:250px' onclick='srSelectedSleep=\"gpa\"; srlifebuttons(); '>As an Upperclassman By GPA</a>";
+	else srHTML+="<a onclick='srSelectedSleep=\"gpa\"; srlifebuttons(); ' style='width:250px'>As an Upperclassman By GPA</a>";
 	srHTML+="<div id='srsleep' class='chart'></div>";
 
 	srHTML+='<h1>How many all-nighters did you pull at Stuy?</h1>';
@@ -141,7 +141,7 @@ function srlifebuttons() {
 	srHTML+='<h1>How many "mental health days" did you take?</h1>';
 	srHTML+="<div id='srmhd' class='chart'></div>";
 	srHTML+='<h1>Were you diagnosed with a mental illness during your time at Stuyvesant?</h1>';
-	srHTML+="<div id='srmen' class='chart'></div>";
+	srHTML+="<div id='srmen' class='chart' style='width:700px'></div>";
 
 	srHTML+='<h1>“In my time at Stuy, I partook in some form of academic dishonesty.”</h1>';
 	if (srSelectedAcd=='gen') srHTML+="<a class='selected' onclick='srSelectedAcd=\"gen\"; srlifebuttons(); '>General</a>";
@@ -173,9 +173,10 @@ function srlifebuttons() {
 	else srHTML+="<a onclick='srSelectedAgain=\"gpa\"; srlifebuttons(); '>By GPA</a>";
 	if (srSelectedAgain=='col') srHTML+="<a class='selected' onclick='srSelectedAgain=\"col\"; srlifebuttons(); '>By College</a>";
 	else srHTML+="<a onclick='srSelectedAgain=\"col\"; srlifebuttons(); '>By College</a>";
-	if (srSelectedAgain=='ins') srHTML+="<a class='selected xl' onclick='srSelectedAgain=\"ins\"; srlifebuttons(); '>By Number of Inspiring Teachers</a>";
-	else srHTML+="<a onclick='srSelectedAgain=\"ins\"; srlifebuttons(); ' class='xl'>By Number of Inspiring Teachers</a>";
+	if (srSelectedAgain=='ins') srHTML+="<a class='selected' style='width:280px' onclick='srSelectedAgain=\"ins\"; srlifebuttons(); '>By Number of Inspiring Teachers</a>";
+	else srHTML+="<a onclick='srSelectedAgain=\"ins\"; srlifebuttons(); ' style='width:280px'>By Number of Inspiring Teachers</a>";
 	srHTML+="<div id='sragain' class='chart'></div>";
+	srHTML+="<br><br><br>";
 	document.getElementById("srstudiv").innerHTML = srHTML;
 	srMakeCharts2();
 }
