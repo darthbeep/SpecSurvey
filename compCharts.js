@@ -5,6 +5,9 @@ $('#frdemo').highcharts({
 		text: 'Religion incoming freshmen identify with'
 	},	xAxis: {
 		categories: ['Christianity','Islam','Judaism','Agnosticism/Atheism','Other'],
+		labels: {
+			rotation: -45,
+		}
 	},
 	yAxis: {
 		title: {
@@ -120,9 +123,12 @@ $('#frfav').highcharts({
 	$(function () {
 $('#frsch').highcharts({
 	title: {
-		text: 'Freshman responses to "After I graduate from Stuyvesant, I think I might attend an Ivy League University, Stanford University, or MIT”'
+		text: 'Freshman responses to"After I graduate from Stuyvesant, I think I might attend an Ivy League University, Stanford University, or MIT”'
 	},	xAxis: {
 		categories: ['Strongly agree','Agree','Neutral','Disagree','Strongly disasgree'],
+		labels: {
+			rotation: -45,
+		}
 	},
 	yAxis: {
 		title: {
@@ -135,7 +141,8 @@ $('#frsch').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginBottom: 150
 	},
 	legend: {
 		layout: 'vertical',
@@ -158,7 +165,7 @@ $('#frsch').highcharts({
 	$(function () {
 $('#fracc').highcharts({
 	title: {
-		text: 'Freshman responses to "I feel prepared for academics at Stuyvesant”'
+		text: 'Freshman responses to<br>"I feel prepared for academics at Stuyvesant”'
 	},	xAxis: {
 		categories: ['Strongly agree','Agree','Neutral','Disagree','Strongly disasgree'],
 	},
@@ -198,7 +205,7 @@ $('#frspr').highcharts({
 	title: {
 		text: 'Average amount of sleep in middle school'
 	},	xAxis: {
-		categories: ['Fewer than 5 hours','5-6 hours','6-7 hours','7-8 hours','More than 8 hours'],
+		categories: ['Fewer than 6 hours','6-7 hours','7-8 hours','8-9 hours','More than 9 hours'],
 	},
 	yAxis: {
 		title: {
@@ -230,13 +237,20 @@ $('#frspr').highcharts({
 	},
 	series: [{
 		 name: 'i stopped doing this manually lol',
-		 data: [19.9,39.9,29.0,9.2,1.9]}]});});
+		 data: [7.2,31.4,35.9,20.9,4.6]}]});});
+		 
+		 
 	$(function () {
 $('#frdrug').highcharts({
 	title: {
-		text: 'Freshman responses to “I am opposed to the use of recreational drugs, like marijuana, by high school students”'
+		text: 'Freshman responses to “I am opposed to the use of <br>recreational drugs, like marijuana, by high school students”'
 	},	xAxis: {
-		categories: ['Strongly agree','Agree','Neutral','Disagree','Strongly disasgree'],
+		categories: ['Strongly agree','Agree','Neutral','Disagree','Strongly disagree'],
+		labels: {
+			style: {
+				fontSize: 13,
+			}
+		}
 	},
 	yAxis: {
 		title: {
@@ -273,9 +287,14 @@ $('#frdrug').highcharts({
 	$(function () {
 $('#fralc').highcharts({
 	title: {
-		text: 'Freshman responses to "I am opposed to the use of alcohol by high school students."'
+		text: 'Freshman responses to<br>"I am opposed to the use of alcohol by high school students."'
 	},	xAxis: {
 		categories: ['Strongly agree','Agree','Neutral','Disagree','Strongly disasgree'],
+		labels: {
+			style: {
+				fontSize: 13,
+			}
+		}
 	},
 	yAxis: {
 		max: 100,
@@ -357,6 +376,9 @@ $('#srdemo').highcharts({
 		text: 'Religion Outgoing Seniors Identify With'
 	},	xAxis: {
 		categories: ['Christianity','Islam','Judaism','Hinduism','Buddhism','Agnosticism/Atheism','Other'],
+		labels: {
+			rotation: -45,
+		}
 	},
 	yAxis: {
 		title: {
@@ -433,7 +455,7 @@ $('#srfch').highcharts({
 	title: {
 		text: 'Did your favorite subject change while at Stuyvesant?'
 	},	xAxis: {
-		categories: ['I don\'t know','No','Yes'],
+		categories: ['Yes', 'No', 'I don\'t know'],
 	},
 	yAxis: {
 		title: {
@@ -464,12 +486,12 @@ $('#srfch').highcharts({
 	},
 	series: [{
 		 name: '',
-		 data: [11.2,36.0,52.8]}]});});
+		 data: [52.8,36.0,11.2]}]});});
 
 	$(function () {
 $('#srcol').highcharts({
 	title: {
-		text: 'Type of college, if any, I will attend next fall'
+		text: 'Type of college, if any,<br> I will attend next fall'
 	},	xAxis: {
 		categories: ['Gap Year','Ivy League','Liberal Arts College','Non-NY State School','Other Research University','Other Top 10 School','SUNY/CUNY','Other'],
 	},
@@ -485,7 +507,8 @@ $('#srcol').highcharts({
 		,max: 50
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginBottom: 150,
 	},
 	legend: {
 		layout: 'vertical',
@@ -508,7 +531,7 @@ $('#srcol').highcharts({
 	$(function () {
 $('#srmpr').highcharts({
 	title: {
-		text: 'Senior responses to "My middle school prepared me for academics at Stuyvesant”'
+		text: 'Senior responses to<br>"My middle school prepared me for academics at Stuyvesant”'
 	},	xAxis: {
 		categories: ['1 (poorly)','2','3','4','5 (exceedingly well)'],
 	},
@@ -549,7 +572,7 @@ $('#srsleep').highcharts({
 	title: {
 		text: 'Average amount of sleep as an upperclassmen'
 	},	xAxis: {
-		categories: ['Less than 5','5 - 6','6 - 7','7 - 8','More than 8'],
+		categories: ['Fewer than 5','5 - 6','6 - 7','7 - 8','More than 8'],
 	},
 	yAxis: {
 		title: {
@@ -584,9 +607,9 @@ $('#srsleep').highcharts({
 $(function () {
 $('#srdrug').highcharts({
 	title: {
-		text: 'Senior responses to “I drank alcohol during high school”'
+		text: 'Senior responses to<br>“I drank alcohol during high school”'
 	},	xAxis: {
-		categories: ['Frequently','Sometimes','Rarely','Never'],
+		categories: ['Never', 'Rarely', 'Sometimes', 'Frequently'],
 	},
 	yAxis: {
 		title: {
@@ -618,13 +641,13 @@ $('#srdrug').highcharts({
 	},
 	series: [{
 		 name: '',
-		 data: [7.5,16.1,19.3,57.1]}]});});
+		 data: [57.1,19.3,16.1,7.5]}]});});
 $(function () {
 $('#srdrug2').highcharts({
 	title: {
-		text: 'Senior responses to “I used marijuana during high school”'
+		text: 'Senior responses to<br>“I used marijuana during high school”'
 	},	xAxis: {
-		categories: ['Frequently','Sometimes','Rarely','Never'],
+		categories: ['Never', 'Rarely', 'Sometimes', 'Frequently'],
 	},
 	yAxis: {
 		title: {
@@ -656,7 +679,7 @@ $('#srdrug2').highcharts({
 	},
 	series: [{
 		 name: '420blazeit',
-		 data: [3.8,6.3,8.8,81.3]}]});});
+		 data: [81.3,8.8,6.3,3.8]}]});});
 $(function () {
 $('#sracd').highcharts({
 	title: {
