@@ -5,39 +5,31 @@ $(function () {
 $('#srdemo').highcharts({
 	title: {
 		//text: 'Gender'
-	},	xAxis: {
-		categories: ['Male','Female','Other'],
-	},
-	yAxis: {
-		title: {
-			text: 'Percent of Students Polled'
-		},
-		plotLines: [{
-			value: 0,
-			width: 1,
-			color: '#808080'
-		}]
-	},
-	chart: {
-		type: 'column'
-	},
-	legend: {
-		layout: 'vertical',
-		align: 'right',
-		verticalAlign: 'middle', 
-		borderWidth: 0,
-		enabled: false
 	},
 	tooltip: {
-		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
-		footerFormat: '</table>',
-		shared: true,
-		useHTML: true
+        pointFormat: '{point.percentage:.1f}%'
+	},
+	chart: {
+		type: 'pie',
 	},
 	series: [{
-		 name: '',
-		 data: [49.7,47.8,2.5]}]});});
+		 data: [{
+		 name: 'Male',
+		 y: 49.7,
+		 },
+		 {
+		 name: 'Female',
+		 y: 47.8,
+		 },
+		 {
+		 name: 'Other',
+		 y: 2.5,
+		 }
+		 ]
+		 }],
+
+		});
+	});
 }
 function srDemoRace() {
 $(function () {
@@ -571,7 +563,7 @@ $('#srmpr').highcharts({
 	series: [{
 		 name: 'Public Zoned School',
 		 data: [18.7,28.0,29.3,18.7,5.3]}, {
-		 name: 'Selective Public School (NEST+m, Mark Twain, etc.)',
+		 name: 'Selective Public School',
 		 data: [8.1,3.2,38.7,35.5,14.5]}, {
 		 name: 'Other',
 		 data: [9.1,22.7,50.0,13.6,4.5]}]});});
@@ -580,41 +572,32 @@ function srFch() {
 $(function () {
 $('#srfch').highcharts({
 	title: {
-		//text: 'Change in favorite subject'
-	},	xAxis: {
-		categories: ['I don\'t know','No','Yes'],
-	},
-	yAxis: {
-		title: {
-			text: 'Percent of Students Polled'
-		},
-		plotLines: [{
-			value: 0,
-			width: 1,
-			color: '#808080'
-		}]
-	},
-	chart: {
-		type: 'column'
-	},
-	legend: {
-		layout: 'vertical',
-		align: 'right',
-		verticalAlign: 'middle', 
-		borderWidth: 0,
-		enabled: false
+		//text: 'Fave subject changed'
 	},
 	tooltip: {
-		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
-		footerFormat: '</table>',
-		shared: true,
-		useHTML: true
+        pointFormat: '{point.percentage:.1f}%'
+	},
+	chart: {
+		type: 'pie',
 	},
 	series: [{
-		 name: '',
-		 data: [11.2,36.0,52.8]}]});});
+		 data: [{
+		 name: 'Yes',
+		 y: 52.8,
+		 },
+		 {
+		 name: 'No',
+		 y: 36.0,
+		 },
+		 {
+		 name: 'I don\'t know',
+		 y: 11.2,
+		 }
+		 ]
+		 }],
 
+		});
+	});
 }
 function srFchGender() {
 $(function () {
@@ -904,39 +887,29 @@ $(function () {
 $('#srmen').highcharts({
 	title: {
 		//text: 'Where you diagnosed with a mental illness at stuyvesant'
-	},	xAxis: {
-		categories: ['No','Yes'],
-	},
-	yAxis: {
-		title: {
-			text: 'Percent of Students Polled'
-		},
-		plotLines: [{
-			value: 0,
-			width: 1,
-			color: '#808080'
-		}]
-	},
-	chart: {
-		type: 'column'
-	},
-	legend: {
-		layout: 'vertical',
-		align: 'right',
-		verticalAlign: 'middle', 
-		borderWidth: 0,
-		enabled: false
 	},
 	tooltip: {
-		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
-		footerFormat: '</table>',
-		shared: true,
-		useHTML: true
+        pointFormat: '{point.percentage:.1f}%'
+	},
+	chart: {
+		type: 'pie',
+		marginLeft: 150,
+		marginRight: 150,
 	},
 	series: [{
-		 name: '',
-		 data: [86.3,13.7]}]});});
+		 data: [{
+		 name: 'Yes',
+		 y: 13.7,
+		 },
+		 {
+		 name: 'No',
+		 y: 86.3,
+		 }]
+		 }],
+
+		});
+	});	
+	
 }
 
 function srAcd() {
@@ -1259,6 +1232,8 @@ $('#srdrug').highcharts({
 		 name: '',
 		 data: [1.2,1.2,5.0,92.5]}]});});
 }
+
+/*
 function srAgain() {
 $(function () {
 $('#sragain').highcharts({
@@ -1297,6 +1272,34 @@ $('#sragain').highcharts({
 	series: [{
 		 name: '',
 		 data: [89.4,10.6]}]});});
+}*/
+function srAgain() {
+$(function () {
+$('#sragain').highcharts({
+	title: {
+		//text: 'Would you choose Stuyvesant Again?'
+	},
+	tooltip: {
+        pointFormat: '{point.percentage:.1f}%'
+	},
+	chart: {
+		type: 'pie',
+		marginLeft: 150,
+		marginRight: 150,
+	},
+	series: [{
+		 data: [{
+		 name: 'Yes',
+		 y: 89.4,
+		 },
+		 {
+		 name: 'No',
+		 y: 10.6,
+		 }]
+		 }],
+
+		});
+	});
 }
 function srAgainGpa() {
 $(function () {
@@ -1317,7 +1320,7 @@ $('#sragain').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
 	},
 	legend: {
 		layout: 'vertical',
@@ -1381,7 +1384,7 @@ $('#sragain').highcharts({
 	series: [{
 		 name: 'Ivy League University',
 		 data: [96.4,3.6]}, {
-		 name: 'Other Top 10 School (Stanford, MIT, UChicago)',
+		 name: 'Other Top 10 School',
 		 data: [96.6,3.4]}, {
 		 name: 'Liberal Arts College',
 		 data: [87.5,12.5]}, {
