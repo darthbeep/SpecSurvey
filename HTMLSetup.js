@@ -99,14 +99,14 @@ function demogbuttons() {
 	if (selected == "rel") frHTML += "<a class='selected' id='frRel' onclick='selected=\"rel\"; demobuttons();'>Religion</a>";
 	else frHTML += "<a id='frRel' onclick='selected=\"rel\"; demobuttons();'>Religion</a>";
 
-	if (selected == "soc") frHTML += "<a class='selected large' id='frRel' onclick='selected=\"soc\"; demobuttons();'>Socioeconomic Status</a>";
-	else frHTML += "<a id='frRel' onclick='selected=\"soc\"; demobuttons();' class='large'>Socioeconomic Status</a>";
+	if (selected == "soc") frHTML += "<a class='selected' style='width:170px' id='frRel' onclick='selected=\"soc\"; demobuttons();'>Socioeconomic Status</a>";
+	else frHTML += "<a id='frRel' onclick='selected=\"soc\"; demobuttons();' style='width:170px'>Socioeconomic Status</a>";
 	
-	if (selected == "ed") frHTML += "<a class='selected large' id='frEd' onclick='selected=\"ed\"; demobuttons();'> Parents' Level of Education</a>";
-	else frHTML += "<a id='frEd' onclick='selected=\"ed\"; demobuttons();'class='large'>Parents' Level of Education</a>";
+	if (selected == "ed") frHTML += "<a class='selected' style='width:260px' id='frEd' onclick='selected=\"ed\"; demobuttons();'> Parents' Highest Level of Education</a>";
+	else frHTML += "<a id='frEd' onclick='selected=\"ed\"; demobuttons();' style='width:260px'>Parents' Highest Level of Education</a>";
 	
-	if (selected == "seo") frHTML += "<a class='selected large' id='frSeo' onclick='selected=\"seo\"; demobuttons();'>Sexual Orientation</a>";
-	else frHTML += "<a id='frSeo' onclick='selected=\"seo\"; demobuttons();'class='large'>Sexual Orientation</a>";
+	if (selected == "seo") frHTML += "<a class='selected' style='width:150px' id='frSeo' onclick='selected=\"seo\"; demobuttons();'>Sexual Orientation</a>";
+	else frHTML += "<a id='frSeo' onclick='selected=\"seo\"; demobuttons();' style='width:150px'>Sexual Orientation</a>";
 
 	frHTML += "<div id='frdemo' class='chart'></div>";
 
@@ -142,7 +142,7 @@ function demogbuttons() {
 
 function appbuttons() {
 	frHTML = "";
-	frHTML += "<h1 class='head' id='apphead'>Applying to Stuyvesant</h1>";
+	frHTML += "<br><br><hr><h1 class='head' id='apphead'>Applying to Stuyvesant</h1>";
 	frAppNar();
 	frHTML += "<h1>What type of middle school did you attend?</h1>"
 
@@ -164,10 +164,10 @@ function appbuttons() {
 	else frHTML += "<a onclick='selectedStudy=\"race\"; appbuttons();'>By Race</a>";
 	if (selectedStudy == "soc") frHTML += "<a class='selected large' onclick='selectedStudy=\"soc\"; appbuttons();'>By Socioeconomic Status</a>";
 	else frHTML += "<a onclick='selectedStudy=\"soc\"; appbuttons();' class='large'>By Socioeconomic Status</a>";
-	if (selectedStudy == "mid") frHTML += "<a class='selected large' onclick='selectedStudy=\"mid\"; appbuttons();'>By Middle School</a>";
-	else frHTML += "<a onclick='selectedStudy=\"mid\"; appbuttons();' class='large'>By Middle School</a>";
+	if (selectedStudy == "mid") frHTML += "<a class='selected' style='width:150px' onclick='selectedStudy=\"mid\"; appbuttons();'>By Middle School</a>";
+	else frHTML += "<a onclick='selectedStudy=\"mid\"; appbuttons();' style='width:150px'>By Middle School</a>";
 
-	frHTML += "<div id='frstudy' class='chart'></div>";
+	frHTML += "<div id='frstudy' class='chart' style='width:700px'></div>";
 	if (selectedStudy=="race") {raceCaption();}
 	if (selectedStudy=="soc") {socCaption();}
 	frHTML += "<h1>Which best describes the method of studying you used for the SHSAT?</h1>";
@@ -176,12 +176,12 @@ function appbuttons() {
 	else frHTML += "<a onclick='selectedMeth=\"gen\"; appbuttons();'>General</a>";
 	if (selectedMeth == "race") frHTML += "<a class='selected' onclick='selectedMeth=\"race\"; appbuttons();'>By Race</a>";
 	else frHTML += "<a onclick='selectedMeth=\"race\"; appbuttons();'>By Race</a>";
-	if (selectedMeth == "mid") frHTML += "<a class='selected large' onclick='selectedMeth=\"mid\"; appbuttons();'>By Middle School</a>";
-	else frHTML += "<a onclick='selectedMeth=\"mid\"; appbuttons();' class='large'>By Middle School</a>";
+	if (selectedMeth == "mid") frHTML += "<a class='selected' style='width:150px' onclick='selectedMeth=\"mid\"; appbuttons();'>By Middle School</a>";
+	else frHTML += "<a onclick='selectedMeth=\"mid\"; appbuttons();' style='width:150px'>By Middle School</a>";
 	if (selectedMeth == "study") frHTML += "<a class='selected large' onclick='selectedMeth=\"study\"; appbuttons();'>By Study Timeframe</a>";
 	else frHTML += "<a onclick='selectedMeth=\"study\"; appbuttons();' class='large'>By Study Timeframe</a>";
 
-	frHTML += "<div id='frmeth' class='chart'></div>";
+	frHTML += "<div id='frmeth' class='chart' style='width: 700px'></div>";
 	if (selectedMeth == "race") raceCaption();
 	frHTML += "<h1>To what extent did a parent/guardian pressure you to come to Stuyvesant?</h1>";
 
@@ -191,8 +191,8 @@ function appbuttons() {
 	else frHTML += "<a onclick='selectedPress=\"race\"; appbuttons();'>By Race</a>";
 	if (selectedPress == "soc") frHTML += "<a class='selected large' onclick='selectedPress=\"soc\"; appbuttons();'>By Socioeconomic Status</a>";
 	else frHTML += "<a onclick='selectedPress=\"soc\"; appbuttons();' class='large'>By Socioeconomic Status</a>";
-	if (selectedPress == "par") frHTML += "<a class='selected large' onclick='selectedPress=\"par\"; appbuttons();'>By Parents' level of Education</a>";
-	else frHTML += "<a onclick='selectedPress=\"par\"; appbuttons();' class='large'>By Parents' Level of Education</a>";
+	if (selectedPress == "par") frHTML += "<a class='selected' style='width:280px' onclick='selectedPress=\"par\"; appbuttons();'>By Parents' Highest Level of Education</a>";
+	else frHTML += "<a onclick='selectedPress=\"par\"; appbuttons();' style='width:280px'>By Parents' Highest Level of Education</a>";
 
 	frHTML += "<div id='frpress' class='chart'></div>";
 	if (selectedPress == "race") raceCaption();
@@ -203,7 +203,7 @@ function appbuttons() {
 
 function midacbuttons() {
 	frHTML = "";
-	frHTML += "<h1 class='head' id='midachead'>Middle School Academics</h1>";
+	frHTML += "<br><br><hr><h1 class='head' id='midachead'>Middle School Academics</h1>";
 	frMidacNar();
 	frHTML += "<h1>How many hours do you spend on homework or studying each night?</h1>"
 
@@ -213,8 +213,8 @@ function midacbuttons() {
 	else frHTML += "<a id='frMid' onclick='selectedHw=\"gender\"; midacbuttons();'>By Gender</a>";
 	if (selectedHw == "race") frHTML += "<a class='selected' onclick='selectedHw=\"race\"; midacbuttons();'>By Race</a>";
 	else frHTML += "<a onclick='selectedHw=\"race\"; midacbuttons();'>By Race</a>";
-	if (selectedHw == "mid") frHTML += "<a class='selected large' onclick='selectedHw=\"mid\"; midacbuttons();'>By Middle School</a>";
-	else frHTML += "<a onclick='selectedHw=\"mid\"; midacbuttons();' class='large'>By Middle School</a>";
+	if (selectedHw == "mid") frHTML += "<a class='selected' style='width:150px' onclick='selectedHw=\"mid\"; midacbuttons();'>By Middle School</a>";
+	else frHTML += "<a onclick='selectedHw=\"mid\"; midacbuttons();' style='width:150px'>By Middle School</a>";
 
 	frHTML += "<div id='frhw' class='chart'></div>";
 	if (selectedHw == "race") raceCaption();
@@ -235,8 +235,8 @@ function midacbuttons() {
 	else frHTML+="<a onclick='selectedSleep=\"gender\"; midacbuttons(); '>By Gender</a>";
 	if (selectedSleep=='race') frHTML+="<a class='selected' onclick='selectedSleep=\"race\"; midacbuttons(); '>By Race</a>";
 	else frHTML+="<a onclick='selectedSleep=\"race\"; midacbuttons(); '>By Race</a>";
-	if (selectedSleep=='mid') frHTML+="<a class='selected large' onclick='selectedSleep=\"mid\"; midacbuttons(); '>By Middle School</a>";
-	else frHTML+="<a onclick='selectedSleep=\"mid\"; midacbuttons(); ' class='large'>By Middle School</a>";
+	if (selectedSleep=='mid') frHTML+="<a class='selected' style='width:150px' onclick='selectedSleep=\"mid\"; midacbuttons(); '>By Middle School</a>";
+	else frHTML+="<a onclick='selectedSleep=\"mid\"; midacbuttons(); ' style='width:150px' >By Middle School</a>";
 	frHTML+="<div id='frsleep' class='chart'></div>";
 	if (selectedSleep == "race") raceCaption();
 
@@ -268,8 +268,8 @@ function midacbuttons() {
 	else frHTML+="<a onclick='selectedAwr=\"gender\"; midacbuttons(); '>By Gender</a>";
 	if (selectedAwr=='race') frHTML+="<a class='selected' onclick='selectedAwr=\"race\"; midacbuttons(); '>By Race</a>";
 	else frHTML+="<a onclick='selectedAwr=\"race\"; midacbuttons(); '>By Race</a>";
-	if (selectedAwr=='mid') frHTML+="<a class='selected large' onclick='selectedAwr=\"mid\"; midacbuttons(); '>By Middle School</a>";
-	else frHTML+="<a onclick='selectedAwr=\"mid\"; midacbuttons(); ' class='large'>By Middle School</a>";
+	if (selectedAwr=='mid') frHTML+="<a class='selected' style='width:150px' onclick='selectedAwr=\"mid\"; midacbuttons(); '>By Middle School</a>";
+	else frHTML+="<a onclick='selectedAwr=\"mid\"; midacbuttons(); ' style='width:150px'>By Middle School</a>";
 	frHTML+="<div id='frawr' class='chart'></div>";
 	if (selectedAwr == "race") raceCaption();
 	document.getElementById("frmidacdiv").innerHTML = frHTML;
@@ -278,7 +278,7 @@ function midacbuttons() {
 
 function midlifebuttons() {
 	frHTML = "";
-	frHTML += "<h1 class='head' id='midlifehead'>Middle School Life and Identity</h1>";
+	frHTML += "<br><br><hr><h1 class='head' id='midlifehead'>Middle School Life and Identity</h1>";
 	frMidlifeNar();
 	frHTML+='<h1>“I consider myself a sociable person.”</h1>';
 	if (selectedSocial=='gen') frHTML+="<a class='selected' onclick='selectedSocial=\"gen\"; midlifebuttons(); '>General</a>";
@@ -297,21 +297,19 @@ function midlifebuttons() {
 	else frHTML+="<a onclick='selectedTv=\"gender\"; midlifebuttons(); '>By Gender</a>";
 	if (selectedTv=='race') frHTML+="<a class='selected' onclick='selectedTv=\"race\"; midlifebuttons(); '>By Race</a>";
 	else frHTML+="<a onclick='selectedTv=\"race\"; midlifebuttons(); '>By Race</a>";
-	if (selectedTv=='sleep') frHTML+="<a class='selected' onclick='selectedTv=\"sleep\"; midlifebuttons(); '>By Hrs of Sleep</a>";
-	else frHTML+="<a onclick='selectedTv=\"sleep\"; midlifebuttons(); '>By Hrs of Sleep</a>";
+	if (selectedTv=='sleep') frHTML+="<a class='selected' onclick='selectedTv=\"sleep\"; midlifebuttons(); ' style='width:150px'>By Hours of Sleep</a>";
+	else frHTML+="<a onclick='selectedTv=\"sleep\"; midlifebuttons(); 'style='width:150px'>By Hours of Sleep</a>";
 	frHTML+="<div id='frtv' class='chart'></div>";
 	if (selectedTv == "race") raceCaption();
 
 	frHTML+='<h1>How many hours a week do you spend on Facebook?</h1>';
 	if (selectedFb=='gen') frHTML+="<a class='selected' onclick='selectedFb=\"gen\"; midlifebuttons(); '>General</a>";
 	else frHTML+="<a onclick='selectedFb=\"gen\"; midlifebuttons(); '>General</a>";
-	if (selectedFb=='gender') frHTML+="<a class='selected' onclick='selectedFb=\"gender\"; midlifebuttons(); '>By Gender</a>";
-	else frHTML+="<a onclick='selectedFb=\"gender\"; midlifebuttons(); '>By Gender</a>";
 	if (selectedFb=='race') frHTML+="<a class='selected' onclick='selectedFb=\"race\"; midlifebuttons(); '>By Race</a>";
 	else frHTML+="<a onclick='selectedFb=\"race\"; midlifebuttons(); '>By Race</a>";
-	if (selectedFb=='sleep') frHTML+="<a class='selected' onclick='selectedFb=\"sleep\"; midlifebuttons(); '>By Hrs of Sleep</a>";
-	else frHTML+="<a onclick='selectedFb=\"sleep\"; midlifebuttons(); '>By Hrs of Sleep</a>";
-	frHTML+="<div id='frfb' class='chart'></div>";
+	if (selectedFb=='sleep') frHTML+="<a class='selected' onclick='selectedFb=\"sleep\"; midlifebuttons(); ' style='width:150px'>By Hours of Sleep</a>";
+	else frHTML+="<a onclick='selectedFb=\"sleep\"; midlifebuttons();' style='width:150px'>By Hours of Sleep</a>";
+	frHTML+="<div id='frfb' class='chart' style='width: 700px'></div>";
 	if (selectedFb == "race") raceCaption();
 
 	frHTML+='<h1>“I am opposed to the use of recreational drugs, like marijuana, by high school students.”</h1>';
@@ -323,8 +321,8 @@ function midlifebuttons() {
 	else frHTML+="<a onclick='selectedDrug=\"race\"; midlifebuttons(); '>By Race</a>";
 	if (selectedDrug=='rel') frHTML+="<a class='selected' onclick='selectedDrug=\"rel\"; midlifebuttons(); '>By Religion</a>";
 	else frHTML+="<a onclick='selectedDrug=\"rel\"; midlifebuttons(); '>By Religion</a>";
-	if (selectedDrug=='ed') frHTML+="<a class='selected large' onclick='selectedDrug=\"ed\"; midlifebuttons(); '>By Parents' Level of Education</a>";
-	else frHTML+="<a onclick='selectedDrug=\"ed\"; midlifebuttons(); ' class='large'>By Parents' Level of Education</a>";
+	if (selectedDrug=='ed') frHTML+="<a class='selected' style='width:280px' onclick='selectedDrug=\"ed\"; midlifebuttons(); '>By Parents' Highest Level of Education</a>";
+	else frHTML+="<a onclick='selectedDrug=\"ed\"; midlifebuttons(); ' style='width:280px'>By Parents' Highest Level of Education</a>";
 	frHTML+="<div id='frdrug' class='chart'></div>";
 	if (selectedDrug == "race") raceCaption();
 
@@ -349,7 +347,7 @@ function midlifebuttons() {
 
 function exButtons() {
 	frHTML = "";
-	frHTML += "<h1 class='head' id='exhead'>Expectations of Stuyvesant and Future Plans</h1>";
+	frHTML += "<br><br><hr><h1 class='head' id='exhead'>Expectations of Stuyvesant and Future Plans</h1>";
 	frExNar();
 	frHTML+='<h1>“I feel prepared for the academics at Stuyvesant.”</h1>';
 	if (selectedAcc=='gen') frHTML+="<a class='selected' onclick='selectedAcc=\"gen\"; exButtons(); '>General</a>";
@@ -358,8 +356,8 @@ function exButtons() {
 	else frHTML+="<a onclick='selectedAcc=\"gender\"; exButtons(); '>By Gender</a>";
 	if (selectedAcc=='race') frHTML+="<a class='selected' onclick='selectedAcc=\"race\"; exButtons(); '>By Race</a>";
 	else frHTML+="<a onclick='selectedAcc=\"race\"; exButtons(); '>By Race</a>";
-	if (selectedAcc=='mid') frHTML+="<a class='selected large' onclick='selectedAcc=\"mid\"; exButtons(); '>By Middle School</a>";
-	else frHTML+="<a onclick='selectedAcc=\"mid\"; exButtons(); ' class='large'>By Middle School</a>";
+	if (selectedAcc=='mid') frHTML+="<a class='selected' style='width:150px' onclick='selectedAcc=\"mid\"; exButtons(); '>By Middle School</a>";
+	else frHTML+="<a onclick='selectedAcc=\"mid\"; exButtons(); ' style='width:150px'>By Middle School</a>";
 	if (selectedAcc=='par') frHTML+="<a class='selected large' onclick='selectedAcc=\"par\"; exButtons(); '>By Parental Pressure</a>";
 	else frHTML+="<a onclick='selectedAcc=\"par\"; exButtons(); ' class='large'>By Parental Pressure</a>";
 	frHTML+="<div id='fracc' class='chart'></div>";
@@ -398,8 +396,8 @@ function exButtons() {
 	else frHTML+="<a onclick='selectedSch=\"race\"; exButtons(); '>By Race</a>";
 	if (selectedSch=='soc') frHTML+="<a class='selected large' onclick='selectedSch=\"soc\"; exButtons(); '>By Socioeconomic Status</a>";
 	else frHTML+="<a onclick='selectedSch=\"soc\"; exButtons(); ' class='large'>By Socioeconomic Status</a>";
-	if (selectedSch=='par') frHTML+="<a class='selected large' onclick='selectedSch=\"par\"; exButtons(); '>By Parent Education</a>";
-	else frHTML+="<a onclick='selectedSch=\"par\"; exButtons(); ' class='large'>By Parent Education</a>";
+	if (selectedSch=='par') frHTML+="<a class='selected' style='width:280px' onclick='selectedSch=\"par\"; exButtons(); '>By Parents' Highest Level of Education</a>";
+	else frHTML+="<a onclick='selectedSch=\"par\"; exButtons(); ' style='width:280px'>By Parents' Highest Level of Education</a>";
 	frHTML+="<div id='frsch' class='chart'></div>";
 	if (selectedSch == "race") raceCaption();
 	if (selectedSch == "soc") socCaption();
@@ -421,9 +419,9 @@ function exButtons() {
 	else frHTML+="<a onclick='selectedGoal=\"gender\"; exButtons(); '>By Gender</a>";
 	if (selectedGoal=='race') frHTML+="<a class='selected' onclick='selectedGoal=\"race\"; exButtons(); '>By Race</a>";
 	else frHTML+="<a onclick='selectedGoal=\"race\"; exButtons(); '>By Race</a>";
-	frHTML+="<div id='frgoal' class='chart'></div>";
+	frHTML+="<div id='frgoal' class='chart' ></div>";
 	if (selectedGoal == "race") raceCaption();
-
+	frHTML += "<br><br><br>";
 	frHTML += "<div class=\"ending\">The Spectator would like to thank Assistant Principal of Chemistry and Physics Scott Thomas for taking time after the school year ended to allow us to use his Scantron machine. Without his help and patience, the Freshman Survey would have been impossible. We would also like to thank the Big Sib Chairs, as well as all the Big Sibs for helping us distribute the Freshman Survey during Camp Stuy.</div><br>";
 	document.getElementById("frexdiv").innerHTML = frHTML;
 	frMakeChartsEx();
