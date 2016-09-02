@@ -1,44 +1,45 @@
-//Demo
-
 function frGender() {
 	$(function () {
 $('#frdemo').highcharts({
 	title: {
-		//text: null
-	},	xAxis: {
-		categories: ['Male','Female','Other'],
-	},
-	yAxis: {
-		title: {
-			text: 'Percent of Students Polled'
-		},
-		plotLines: [{
-			value: 0,
-			width: 1,
-			color: '#808080'
-		}]
-	},
-	chart: {
-		type: 'column'
-	},
-	legend: {
-		layout: 'vertical',
-		align: 'right',
-		verticalAlign: 'middle', 
-		borderWidth: 0,
-		enabled: false
+		//text: 'Gender'
 	},
 	tooltip: {
-		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
-		footerFormat: '</table>',
-		shared: true,
-		useHTML: true
+        pointFormat: '{point.percentage:.1f}%'
+	},
+	chart: {
+		type: 'pie',
+	},
+	plotOptions: {
+		pie: {
+			dataLabels: {
+				style: {
+					fontSize: 14
+				}
+			}
+		}
 	},
 	series: [{
-		 name: '',
-		 data: [51.3,47.8,0.9]}]});});
+		 data: [{
+		 name: 'Male',
+		 y: 51.3,
+		 },
+		 {
+		 name: 'Female',
+		 y: 47.8,
+		 },
+		 {
+		 name: 'Other',
+		 y: 0.9,
+		 }
+		 ]
+		 }],
+
+		});
+	});
 }
+
+
 function frEth() {
 	$(function () {
 $('#frdemo').highcharts({
@@ -124,6 +125,9 @@ $('#frdemo').highcharts({
 		//text: 'Religion'
 	},	xAxis: {
 		categories: ['Christianity','Islam','Judaism','Agnosticism/Atheism','Other'],
+		labels: {
+			rotation: -45,
+		}
 	},
 	yAxis: {
 		title: {
@@ -136,7 +140,7 @@ $('#frdemo').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
 	},
 	legend: {
 		layout: 'vertical',
@@ -325,8 +329,14 @@ function frMidRace() {
 $('#frmid').highcharts({
 	title: {
 		//text: 'Middle School by Race'
-	},	xAxis: {
+	},
+	xAxis: {
 		categories: ['Selective Public School','Zoned Public School','Private School','Parochial School','Homeschool'],
+		labels: {
+                style: {
+                    fontSize:'14px'
+                }
+            }
 	},
 	yAxis: {
 		title: {
@@ -339,7 +349,8 @@ $('#frmid').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginBottom: 120,
 	},
 	legend: {
 		layout: 'vertical',
@@ -409,7 +420,12 @@ $('#frstudy').highcharts({
 	title: {
 		//text: '"I started studying for the SHSAT"'
 	},	xAxis: {
-		categories: ['More than one year before the exam','6 months-1 year before the exam','4-6 months before the exam','1-4 months before the exam','Less than one month before the exam','Did not study'],
+		categories: ['More than one year before','6 months-1 year before','4-6 months before','1-4 months before','Less than one month before','Did not study'],
+		labels: {
+            style: {
+                fontSize:'14px'
+            }
+        }
 	},
 	yAxis: {
 		title: {
@@ -422,7 +438,7 @@ $('#frstudy').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
 	},
 	legend: {
 		layout: 'vertical',
@@ -448,7 +464,12 @@ $('#frstudy').highcharts({
 	title: {
 		//text: '"I started studying for the SHSAT" By Race'
 	},	xAxis: {
-		categories: ['More than one year before the exam','6 months-1 year before the exam','4-6 months before the exam','1-4 months before the exam','Less than one month before the exam','Did not study'],
+		categories: ['More than one year before','6 months-1 year before','4-6 months before','1-4 months before','Less than one month before','Did not study'],
+		labels: {
+            style: {
+                fontSize:'14px'
+            }
+        }
 	},
 	yAxis: {
 		title: {
@@ -461,7 +482,8 @@ $('#frstudy').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+
 	},
 	legend: {
 		layout: 'vertical',
@@ -493,7 +515,12 @@ $('#frstudy').highcharts({
 	title: {
 		//text: '"I started studying for the SHSAT" By Socioeconomic Status'
 	},	xAxis: {
-		categories: ['More than one year before the exam','6 months-1 year before the exam','4-6 months before the exam','1-4 months before the exam','Less than one month before the exam','Did not study'],
+		categories: ['More than one year before','6 months-1 year before','4-6 months before','1-4 months before','Less than one month before','Did not study'],
+		labels: {
+            style: {
+                fontSize:'14px'
+            }
+        }
 	},
 	yAxis: {
 		title: {
@@ -506,7 +533,9 @@ $('#frstudy').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginBottom: 150,
+		marginLeft: 100,
 	},
 	legend: {
 		layout: 'vertical',
@@ -539,8 +568,8 @@ $('#frstudy').highcharts({
 	title: {
 		//text: '"I started studying for the SHSAT" By Middle School'
 	},	xAxis: {
-		categories: ['More than one year before the exam','6 months-1 year before the exam','4-6 months before the exam','1-4 months before the exam','Less than one month before the exam','Did not study'],
-	},
+		categories: ['More than one year before','6 months-1 year before','4-6 months before','1-4 months before','Less than one month before','Did not study'],
+        },
 	yAxis: {
 		title: {
 			text: 'Percent of Students Polled'
@@ -552,7 +581,9 @@ $('#frstudy').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginBottom: 150,
+		marginLeft: 100,
 	},
 	legend: {
 		layout: 'vertical',
@@ -666,6 +697,9 @@ $('#frmeth').highcharts({
 		//text: 'Methods of Studying for the SHSAT by Middle School'
 	},	xAxis: {
 		categories: ['Self-study/preparatory books','Preporatory class (not SHSI)','SHSI preporatory school','One-on-one tutoring','Other'],
+		labels: {
+			rotation: -45,
+		}
 	},
 	yAxis: {
 		title: {
@@ -678,7 +712,8 @@ $('#frmeth').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginLeft: 100,
 	},
 	legend: {
 		layout: 'vertical',
@@ -708,6 +743,9 @@ $('#frmeth').highcharts({
 		//text: 'Method of Stuying for the SHSAT by Study Timeframe'
 	},	xAxis: {
 		categories: ['Self-study/preparatory books','Preporatory class (not SHSI)','SHSI preporatory school','One-on-one tutoring','Other'],
+		labels: {
+			rotation: -45,
+		}
 	},
 	yAxis: {
 		title: {
@@ -720,7 +758,8 @@ $('#frmeth').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginLeft: 100,
 	},
 	legend: {
 		layout: 'vertical',
@@ -736,15 +775,15 @@ $('#frmeth').highcharts({
 		useHTML: true
 	},
 	series: [{
-		 name: 'More than one year before the exam',
+		 name: 'More than one year before',
 		 data: [13.2,70.1,11.1,2.8,2.8]}, {
-		 name: '6 months-1 year before the exam',
+		 name: '6 months-1 year before',
 		 data: [11.3,74.2,5.4,5.4,3.8]}, {
-		 name: '4-6 months before the exam',
+		 name: '4-6 months before',
 		 data: [12.5,67.6,2.9,14.7,2.2]}, {
-		 name: '1-4 months before the exam',
+		 name: '1-4 months before',
 		 data: [12.1,73.6,4.3,9.3,0.7]}, {
-		 name: 'Less than one month before the exam',
+		 name: 'Less than one month before',
 		 data: [51.5,24.2,0.0,6.1,18.2]}]});});
 
 }
@@ -1170,7 +1209,13 @@ $('#frhw').highcharts({
 		//text: 'Hours Spent on Homework Per Night By Middle School'
 	},	xAxis: {
 		categories: ['Less than half an hour','Half an hour to an hour','One to two hours','Two to three hours','More than three hours'],
-	},
+		labels: {
+			style:{
+				fontSize: 14,
+			}
+			
+		}
+		},
 	yAxis: {
 		title: {
 			text: 'Percent of Students Polled'
@@ -1198,11 +1243,11 @@ $('#frhw').highcharts({
 		useHTML: true
 	},
 	series: [{
-		 name: 'Selective Public Middle School',
+		 name: 'Selective Public',
 		 data: [6.4,25.6,36.1,23.1,8.9]}, {
-		 name: 'Zoned Public Middle School',
+		 name: 'Zoned Public',
 		 data: [7.6,24.2,38.3,21.6,8.3]}, {
-		 name: 'Private/Parochial School',
+		 name: 'Private/Parochial',
 		 data: [10.3,23.1,33.3,23.1,10.3]}]});});
 }
 function frFav() {
@@ -1483,11 +1528,11 @@ $('#frsleep').highcharts({
 		useHTML: true
 	},
 	series: [{
-		 name: 'Selective Public Middle School',
+		 name: 'Selective Public',
 		 data: [7.7,33.1,36.2,19.3,3.6]}, {
-		 name: 'Zoned Public Middle School',
+		 name: 'Zoned Public',
 		 data: [7.9,29.1,36.6,21.5,4.9]},  {
-		 name: 'Private/Parochial School',
+		 name: 'Private/Parochial',
 		 data: [0.0,33.3,35.9,23.1,7.7]}]});});
 }
 function frWork() {
@@ -1768,11 +1813,11 @@ $('#frawr').highcharts({
 		useHTML: true
 	},
 	series: [{
-		 name: 'Selective Public Middle School',
+		 name: 'Selective Public',
 		 data: [18.6,42.6,32.2,5.2,1.4]}, {
-		 name: 'Zoned Public Middle School',
+		 name: 'Zoned Public',
 		 data: [17.4,41.1,31.3,7.9,2.3]}, {
-		 name: 'Private/Parochial School',
+		 name: 'Private/Parochial',
 		 data: [25.6,41.0,30.8,2.6,0.0]}]});});
 
 }
@@ -2031,6 +2076,9 @@ $('#frtv').highcharts({
 		//text: 'Time spent watching tv by hours slept'
 	},	xAxis: {
 		categories: ['0 - 1 hour','1 - 3 hours','3 - 5 hours','5 - 7 hours','More than 7 hours'],
+		labels: {
+			fontSize: 14,
+		}
 	},
 	yAxis: {
 		title: {
@@ -2074,7 +2122,7 @@ function frFb() {
 	$(function () {
 $('#frfb').highcharts({
 	title: {
-		//text: 'Time spent watching tv by hours slept'
+		//text: 'Time spent on FB by hours slept'
 	},	xAxis: {
 		categories: ['I don\'t have a Facebook account','I don\'t have a Facebook but I use other social media.','0-1.5 hours','1.5-3 hours','More than 3 hours'],
 	},
@@ -2113,7 +2161,7 @@ function frFbGender() {
 	$(function () {
 $('#frfb').highcharts({
 	title: {
-		//text: 'Time spent watching tv by hours slept by gender'
+		//text: 'Time spent on FB by hours slept by gender'
 	},	xAxis: {
 		categories: ['I don\'t have a Facebook account','I don\'t have a Facebook but I use other social media.','0-1.5 hours','1.5-3 hours','More than 3 hours'],
 	},
@@ -2153,7 +2201,7 @@ function frFbRace() {
 	$(function () {
 $('#frfb').highcharts({
 	title: {
-		//text: 'Time spent watching tv by hours slept by race'
+		//text: 'Time spent on FB by hours slept by race'
 	},	xAxis: {
 		categories: ['I don\'t have a Facebook account','I don\'t have a Facebook but I use other social media.','0-1.5 hours','1.5-3 hours','More than 3 hours'],
 	},
@@ -2195,7 +2243,7 @@ function frFbSleep() {
 	$(function () {
 $('#frfb').highcharts({
 	title: {
-		//text: 'Time spent watching tv by hours slept by amount of sleep'
+		//text: 'Time spent on FB by hours slept by amount of sleep'
 	},	xAxis: {
 		categories: ['I don\'t have a Facebook account','I don\'t have a Facebook but I use other social media.','0-1.5 hours','1.5-3 hours','More than 3 hours'],
 	},
@@ -2210,7 +2258,8 @@ $('#frfb').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginLeft: 100,
 	},
 	legend: {
 		layout: 'vertical',
@@ -3389,6 +3438,12 @@ $('#frexc').highcharts({
 		//text: 'Extracurricular of interest'
 	},	xAxis: {
 		categories: ['Academic Clubs/publications','Sports','Debate/Government','Community Service','Arts (visual or performance)','Other/Unsure'],
+		labels: {
+			rotation: -45,
+			style: {
+				fontSize: 14,
+			}
+		}
 	},
 	yAxis: {
 		title: {
@@ -3401,7 +3456,8 @@ $('#frexc').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginLeft: 70,
 	},
 	legend: {
 		layout: 'vertical',
@@ -3429,6 +3485,12 @@ $('#frexc').highcharts({
 		//text: 'Extracurricular of interest by gender'
 	},	xAxis: {
 		categories: ['Academic Clubs/publications','Sports','Debate/Government','Community Service','Arts (visual or performance)','Other/Unsure'],
+		labels: {
+			style: {
+				fontSize: 14,
+			}
+			
+		}
 	},
 	yAxis: {
 		title: {
@@ -3441,7 +3503,9 @@ $('#frexc').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginBottom: 150,
+		marginLeft: 80,
 	},
 	legend: {
 		layout: 'vertical',
@@ -3470,7 +3534,13 @@ $('#frexc').highcharts({
 		//text: 'Extracurricular of interest by race'
 	},	xAxis: {
 		categories: ['Academic Clubs/publications','Sports','Debate/Government','Community Service','Arts (visual or performance)','Other/Unsure'],
-	},
+		labels: {
+			style:{
+				fontSize: 14
+			}
+			
+		}
+		},
 	yAxis: {
 		title: {
 			text: 'Percent of Students Polled'
@@ -3482,7 +3552,9 @@ $('#frexc').highcharts({
 		}]
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		marginBottom: 150,
+		marginLeft: 80,
 	},
 	legend: {
 		layout: 'vertical',
@@ -3514,6 +3586,11 @@ $('#frgoal').highcharts({
 		//text: 'Academic field of choice'
 	},	xAxis: {
 		categories: ['STEM-related fields','Social sciences','Foreign language studies','English language studies','Finance/business/management','Other/Unsure'],
+		labels: {
+			style: {
+				fontSize: 14,
+			},
+		},
 	},
 	yAxis: {
 		title: {
@@ -3553,6 +3630,11 @@ $('#frgoal').highcharts({
 		//text: 'Academic field of choice by gender'
 	},	xAxis: {
 		categories: ['STEM-related fields','Social sciences','Foreign language studies','English language studies','Finance/business/management','Other/Unsure'],
+		labels: {
+			style: {
+				fontSize: 14,
+			},
+		},
 	},
 	yAxis: {
 		title: {
@@ -3593,6 +3675,11 @@ $('#frgoal').highcharts({
 		//text: 'Academic field of choice by race'
 	},	xAxis: {
 		categories: ['STEM-related fields','Social sciences','Foreign language studies','English language studies','Finance/business/management','Other/Unsure'],
+		labels: {
+			style: {
+				fontSize: 14,
+			},
+		},
 	},
 	yAxis: {
 		title: {
