@@ -41,7 +41,8 @@ Highcharts.theme = {
       gridLineColor: '#707073',
       labels: {
          style: {
-            color: '#E0E0E3'
+            color: '#E0E0E3',
+			fontSize: '14px',
          }
       },
       lineColor: '#707073',
@@ -78,7 +79,11 @@ Highcharts.theme = {
       }
    },
    plotOptions: {
+	  column: {
+		  animation: false,
+	  },
       series: {
+		 animation: false,
          dataLabels: {
             color: '#B0B0B3'
          },
@@ -264,7 +269,8 @@ Highcharts.theme = {
    xAxis: {
       labels: {
          style: {
-            color: '#6e6e70'
+            color: '#6e6e70',
+			fontSize: '14px',
          }
       }
    },
@@ -276,7 +282,11 @@ Highcharts.theme = {
       }
    },
    plotOptions: {
+	column: {
+		  animation: false,
+	  },
       series: {
+		 animation: false,
          shadow: true
       },
       candlestick: {
@@ -365,7 +375,7 @@ Highcharts.theme = {
       gridLineWidth: 1,
       labels: {
          style: {
-            fontSize: '12px'
+            fontSize: '14px'
          }
       }
    },
@@ -383,6 +393,12 @@ Highcharts.theme = {
       }
    },
    plotOptions: {
+	     column: {
+		  animation: false,
+	  },
+      series: {
+		 animation: false,
+	  },
       candlestick: {
          lineColor: '#404048'
       }
@@ -450,7 +466,7 @@ Highcharts.theme = {
       gridLineWidth: 1,
       labels: {
          style: {
-            fontSize: '12px'
+            fontSize: '14px'
          }
       }
    },
@@ -468,6 +484,12 @@ Highcharts.theme = {
       }
    },
    plotOptions: {
+	     column: {
+		  animation: false,
+	  },
+      series: {
+		 animation: false,
+	  },
       candlestick: {
          lineColor: '#404048'
       }
@@ -515,7 +537,7 @@ Highcharts.theme = {
          style: {
             color: '#666',
             cursor: 'default',
-            fontSize: '11px',
+            fontSize: '14px',
             lineHeight: '14px'
          }
       },
@@ -571,7 +593,16 @@ Highcharts.theme = {
             stroke: '#CCCCCC'
          }
       }
-   }
+   },
+   
+     plotOptions: {
+	     column: {
+		  animation: false,
+	  },
+      series: {
+		 animation: false,
+	  },
+	 }
 
 }
 // Apply the theme
