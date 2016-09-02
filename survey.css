@@ -120,8 +120,12 @@ h1 {
 
 .topimage {
 	height: 100%;
-	width: 100%;
-	margin-top: 0;
+	width: 101.35%;
+	margin-top: -10px;
+  margin-left: -10px;
+  /*margin-left: -500px;
+  margin-right: -500px;
+  padding: -10px;*/
 
 }
 .toptext {
@@ -166,7 +170,7 @@ h1 {
 	background-color: black;
 	color: white;
 	border: 2px solid white;
-	
+
 	cursor: pointer;
 	font-family: "Exo";
 }
@@ -297,5 +301,3 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
