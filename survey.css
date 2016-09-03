@@ -273,9 +273,9 @@ h1 {
 	display: block;
 	width: 400px;
 	font-size: 30px;
-	color: blue;
+	/*color: blue;
 	background-color: white;
-	border: 2px solid blue;
+	border: 2px solid blue;*/
 	margin-left: auto;
 	margin-right: auto;
 	transition: all .5s ease-out;
@@ -284,9 +284,9 @@ h1 {
 	display: block;
 	width: 400px;
 	font-size: 30px;
-	color: blue;
+	/*color: blue;
 	background-color: white;
-	border: 2px solid blue;
+	border: 2px solid blue;*/
 	margin-left: auto;
 	margin-right: auto;
 	transition: all .5s ease-out;
@@ -295,9 +295,91 @@ h1 {
 	display: block;
 	width: 400px;
 	font-size: 30px;
-	color: white;
+	/*color: white;
 	background-color: blue;
-	border: 2px solid blue;
+	border: 2px solid blue;*/
 	margin-left: auto;
 	margin-right: auto;
+}
+/*Narrative coloring*/
+#frdemocss {
+  color: #7cb5ec;
+  border: 2px solid #7cb5ec;
+  background-color: white;
+}
+#frdemocss:hover {
+  color: white;
+  background-color: #7cb5ec;
+}
+#frappcss {
+  color: #f7a35c;
+  border: 2px solid #f7a35c;
+  background-color: white;
+}
+#frappcss:hover {
+  color: white;
+  background-color: #f7a35c;
+}
+#frmidaccss {
+  color: #90ee7e;
+  border: 2px solid #90ee7e;
+  background-color: white;
+}
+#frmidaccss:hover {
+  color: white;
+  background-color: #90ee7e;
+}
+#frmidlifecss {
+  color: #7798BF;
+  border: 2px solid #7798BF;
+  background-color: white;
+}
+#frmidlifecss:hover {
+  color: white;
+  background-color: #7798BF;
+}
+#frexcss {
+  color: #aaeeee;
+  border: 2px solid #aaeeee;
+  background-color: white;
+}
+#frexcss:hover {
+  color: white;
+  background-color: #aaeeee;
+}
+#srdemocss {
+  color: #7cb5ec;
+  border: 2px solid #7cb5ec;
+  background-color: white;
+}
+#srdemocss:hover {
+  color: white;
+  background-color: #7cb5ec;
+}
+#sracccss {
+  color: #f7a35c;
+  border: 2px solid #f7a35c;
+  background-color: white;
+}
+#sracccss:hover {
+  color: white;
+  background-color: #f7a35c;
+}
+#srlifecss {
+  color: #90ee7e;
+  border: 2px solid #90ee7e;
+  background-color: white;
+}
+#srlifecss:hover {
+  color: white;
+  background-color: #90ee7e;
+}
+#compnarcss {
+  color: #7cb5ec;
+  border: 2px solid #7cb5ec;
+  background-color: white;
+}
+#compnarcss:hover {
+  color: white;
+  background-color: #7cb5ec;
 }

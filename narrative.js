@@ -1,5 +1,5 @@
 function frDemoNar() {
-	frHTML += "<a href = '#frdemonar' class='buttonlink'>Read Narrative</a>";
+	frHTML += "<a href = '#frdemonar' class='buttonlink' id='frdemocss'>Read Narrative</a>";
 	frHTML += '<div id="frdemonar" class="overlay">';
 	frHTML += '<div class="popup">';
 	frHTML += '<h2>Demographics Narrative</h2>';
@@ -18,7 +18,7 @@ function frDemoNar() {
 	frHTML += "<hr class='sep'>";
 }
 function frAppNar() {
-	frHTML += "<a href = '#frappnar' class='buttonlink'>Read Narrative</a>";
+	frHTML += "<a href = '#frappnar' class='buttonlink' id='frappcss'>Read Narrative</a>";
 	frHTML += '<div id="frappnar" class="overlay">';
 	frHTML += '<div class="popup">';
 	frHTML += '<h2>Applying to Stuyvesant Narrative</h2>';
@@ -37,7 +37,7 @@ function frAppNar() {
 	frHTML += "<hr class='sep'>";
 }
 function frMidacNar() {
-	frHTML += "<a href = '#frmidacnar' class='buttonlink'>Read Narrative</a>";
+	frHTML += "<a href = '#frmidacnar' class='buttonlink' id='frmidaccss'>Read Narrative</a>";
 	frHTML += '<div id="frmidacnar" class="overlay">';
 	frHTML += '<div class="popup">';
 	frHTML += '<h2>Middle School Acedemics Narrative</h2>';
@@ -56,7 +56,7 @@ function frMidacNar() {
 	frHTML += "<hr class='sep'>";
 }
 function frMidlifeNar() {
-	frHTML += "<a href = '#frmidlifenar' class='buttonlink'>Read Narrative</a>";
+	frHTML += "<a href = '#frmidlifenar' class='buttonlink' id='frmidlifecss'>Read Narrative</a>";
 	frHTML += '<div id="frmidlifenar" class="overlay">';
 	frHTML += '<div class="popup">';
 	frHTML += '<h2>Middle School Life and Identity Narrative</h2>';
@@ -75,7 +75,7 @@ function frMidlifeNar() {
 	frHTML += "<hr class='sep'>";
 }
 function frExNar() {
-	frHTML += "<a href = '#frexnar' class='buttonlink'>Read Narrative</a>";
+	frHTML += "<a href = '#frexnar' class='buttonlink' id='frexcss'>Read Narrative</a>";
 	frHTML += '<div id="frexnar" class="overlay">';
 	frHTML += '<div class="popup">';
 	frHTML += '<h2>Expectations of Stuyvesant and Future Plans Narrative</h2>';
@@ -95,7 +95,7 @@ function frExNar() {
 }
 
 function srDemoNar() {
-	srHTML += "<a href = '#srdemonar' class='buttonlink'>Read Narrative</a>";
+	srHTML += "<a href = '#srdemonar' class='buttonlink' id='srdemocss'>Read Narrative</a>";
 	srHTML += '<div id="srdemonar" class="overlay">';
 	srHTML += '<div class="popup">';
 	srHTML += '<h2>Demographics Narrative</h2>';
@@ -114,7 +114,7 @@ function srDemoNar() {
 	srHTML += "<hr class='sep'>";
 }
 function srAcNar() {
-	srHTML += "<a href = '#sracnar' class='buttonlink'>Read Narrative</a>";
+	srHTML += "<a href = '#sracnar' class='buttonlink' id='sracccss'>Read Narrative</a>";
 	srHTML += '<div id="sracnar" class="overlay">';
 	srHTML += '<div class="popup">';
 	srHTML += '<h2>Stuyvesant Acedemics Narrative</h2>';
@@ -133,7 +133,7 @@ function srAcNar() {
 	srHTML += "<hr class='sep'>";
 }
 function srLifeNar() {
-	srHTML += "<a href = '#srlifenar' class='buttonlink'>Read Narrative</a>";
+	srHTML += "<a href = '#srlifenar' class='buttonlink' id='srlifecss'>Read Narrative</a>";
 	srHTML += '<div id="srlifenar" class="overlay">';
 	srHTML += '<div class="popup">';
 	srHTML += '<h2>Student Life and Identity Narrative</h2>';
@@ -153,7 +153,7 @@ function srLifeNar() {
 }
 
 function compNar() {
-	compHTML += "<a href = '#compnar' class='buttonlink'>Read Narrative</a>";
+	compHTML += "<a href = '#compnar' class='buttonlink' id='compnarcss'>Read Narrative</a>";
 	compHTML += '<div id="compnar" class="overlay">';
 	compHTML += '<div class="popup">';
 	compHTML += '<h2>Demographics Narrative</h2>';

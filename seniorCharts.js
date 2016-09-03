@@ -21,10 +21,15 @@ $('#srdemo').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#7cb5ec',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -60,10 +65,15 @@ $('#srdemo').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#7cb5ec',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -99,10 +109,15 @@ $('#srdemo').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#7cb5ec',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -139,10 +154,15 @@ $('#srdemo').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#7cb5ec',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -181,7 +201,7 @@ $('#srdemo').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -223,10 +243,15 @@ $('#srdemo').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#7cb5ec',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -260,13 +285,18 @@ $('#srdemo').highcharts({
 			color: '#808080'
 		}]
 	},
+	plotOptions: {
+		column: {
+			color: '#7cb5ec',
+		}
+	},
 	chart: {
 		type: 'column'
 	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -302,10 +332,15 @@ $('#srdemo').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#7cb5ec',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -342,10 +377,15 @@ $('#srgpa').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#f7a35c',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -382,10 +422,15 @@ $('#srcol').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#f7a35c',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -424,7 +469,7 @@ $('#srcol').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -472,7 +517,7 @@ $('#srcol').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -516,10 +561,15 @@ $('#srmpr').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#f7a35c',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -558,7 +608,7 @@ $('#srmpr').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -597,10 +647,15 @@ $('#srfch').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#f7a35c',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -640,7 +695,7 @@ $('#srfch').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -677,10 +732,15 @@ $('#srimp').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#f7a35c',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -718,10 +778,15 @@ $('#srsleep').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -757,10 +822,15 @@ $('#srsleep').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -799,7 +869,7 @@ $('#srsleep').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -842,10 +912,15 @@ $('#sraln').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -881,10 +956,15 @@ $('#srmhd').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -920,10 +1000,15 @@ $('#srmen').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -960,10 +1045,15 @@ $('#sracd').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1002,7 +1092,7 @@ $('#sracd').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -1044,10 +1134,15 @@ $('#srsea').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1084,10 +1179,15 @@ $('#srdrug').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1123,10 +1223,15 @@ $('#srdrug').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1162,10 +1267,15 @@ $('#srdrug').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1201,10 +1311,15 @@ $('#srdrug').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1241,10 +1356,15 @@ $('#srdrug').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1285,7 +1405,7 @@ $('#sragain').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1321,10 +1441,15 @@ title: {
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#90ee7e',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0,
 		enabled: false
 	},
@@ -1363,7 +1488,7 @@ $('#sragain').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -1409,7 +1534,7 @@ $('#sragain').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
@@ -1460,7 +1585,7 @@ $('#sragain').highcharts({
 	legend: {
 		layout: 'vertical',
 		align: 'right',
-		verticalAlign: 'middle', 
+		verticalAlign: 'middle',
 		borderWidth: 0
 	},
 	tooltip: {
