@@ -2,41 +2,45 @@ function frGender() {
 	$(function () {
 $('#frdemo').highcharts({
 	title: {
-		//text: 'Gender'
-	},
-	tooltip: {
-        pointFormat: '{point.percentage:.1f}%'
-	},
-	chart: {
-		type: 'pie',
+ 		//text: null
+ 	},	xAxis: {
+ 		categories: ['Male','Female','Other'],
+ 	},
+ 	yAxis: {
+ 		title: {
+ 			text: 'Percent of Students Polled'
+ 		},
+		plotLines: [{
+			value: 0,
+			width: 1,
+			color: '#808080'
+		}]
+ 	},
+  	chart: {
+		type: 'column'
 	},
 	plotOptions: {
-		pie: {
-			dataLabels: {
-				style: {
-					fontSize: 14
-				}
-			}
+		column: {
+			color: '#77B2C7',
 		}
 	},
-	series: [{
-		 data: [{
-		 name: 'Male',
-		 y: 51.3,
-		 },
-		 {
-		 name: 'Female',
-		 y: 47.8,
-		 },
-		 {
-		 name: 'Other',
-		 y: 0.9,
-		 }
-		 ]
-		 }],
-
-		});
-	});
+	legend: {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle', 
+ 		borderWidth: 0,
+ 		enabled: false
+ 	},
+ 	tooltip: {
+ 		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+ 		footerFormat: '</table>',
+ 		shared: true,
+ 		useHTML: true
+ 	},
+  	series: [{
+ 		 name: '',
+ 		 data: [51.3,47.8,0.9]}]});});
 }
 
 
@@ -74,6 +78,11 @@ $('#frdemo').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#77B2C7',
+		}
 	},
 	series: [{
 		 name: 'Percent of Students',
@@ -114,6 +123,11 @@ $('#frdemo').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#77B2C7',
+		}
+	},
 	series: [{
 		 name: 'Percent of Students',
 		 data: [86.4,6,6.2,.9,.4]}]});});
@@ -141,6 +155,11 @@ $('#frdemo').highcharts({
 	},
 	chart: {
 		type: 'column',
+	},
+	plotOptions: {
+		column: {
+			color: '#77B2C7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -181,6 +200,11 @@ $('#frdemo').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#77B2C7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -266,6 +290,11 @@ $('#frdemo').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#77B2C7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -284,6 +313,52 @@ $('#frdemo').highcharts({
 		 name: 'someone please rescue me from the hell that is life',
 		 data: [5.1,22.2,8.8,37.0,26.9]}]});});
 }
+
+function frSeo() {
+	$(function () {
+$('#frdemo').highcharts({
+	title: {
+		//text: 'Sexual Orientation'
+	},	xAxis: {
+		categories: ['Heterosexual','Homosexual','Bisexual','Unsure','Other'],
+	},
+	yAxis: {
+		title: {
+			text: 'Percent of Students Polled'
+		},
+		plotLines: [{
+			value: 0,
+			width: 1,
+			color: '#808080'
+		}]
+	},
+	chart: {
+		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#77B2C7',
+		}
+	},
+	legend: {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle', 
+		borderWidth: 0,
+		enabled: false
+	},
+	tooltip: {
+		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+		footerFormat: '</table>',
+		shared: true,
+		useHTML: true
+	},
+	series: [{
+		 name: '86.7',
+		 data: [86.7,.9,4,6.5,1.9]}]});});
+}
+
 function frMid() {
 $(function () {
 $('#frmid').highcharts({
@@ -304,6 +379,11 @@ $('#frmid').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#77A4C7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -374,45 +454,7 @@ $('#frmid').highcharts({
 		 data: [58.3,29.2,12.5,0,0]}]});});
 }
 
-function frSeo() {
-	$(function () {
-$('#frdemo').highcharts({
-	title: {
-		//text: 'Sexual Orientation'
-	},	xAxis: {
-		categories: ['Heterosexual','Homosexual','Bisexual','Unsure','Other'],
-	},
-	yAxis: {
-		title: {
-			text: 'Percent of Students Polled'
-		},
-		plotLines: [{
-			value: 0,
-			width: 1,
-			color: '#808080'
-		}]
-	},
-	chart: {
-		type: 'column'
-	},
-	legend: {
-		layout: 'vertical',
-		align: 'right',
-		verticalAlign: 'middle', 
-		borderWidth: 0,
-		enabled: false
-	},
-	tooltip: {
-		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
-		footerFormat: '</table>',
-		shared: true,
-		useHTML: true
-	},
-	series: [{
-		 name: '86.7',
-		 data: [86.7,.9,4,6.5,1.9]}]});});
-}
+
 //Applying to stuy
 function frStudy() {
 	$(function () {
@@ -439,6 +481,11 @@ $('#frstudy').highcharts({
 	},
 	chart: {
 		type: 'column',
+	},
+	plotOptions: {
+		column: {
+			color: '#77A4C7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -630,6 +677,11 @@ $('#frmeth').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#77A4C7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -808,6 +860,11 @@ $('#frpress').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#77A4C7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -980,6 +1037,11 @@ $('#frpar').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#778AC7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -1100,6 +1162,11 @@ $('#frhw').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#778AC7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -1271,6 +1338,11 @@ $('#frfav').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#778AC7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -1392,6 +1464,11 @@ $('#frsleep').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#778AC7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -1556,6 +1633,11 @@ $('#frwork').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#778AC7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -1676,6 +1758,11 @@ $('#frawr').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#778AC7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -1844,6 +1931,11 @@ $('#frsocial').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#777DC7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -1884,6 +1976,7 @@ $('#frsocial').highcharts({
 	chart: {
 		type: 'column'
 	},
+
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -1966,6 +2059,11 @@ $('#frtv').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},	
+	plotOptions: {
+		column: {
+			color: '#777DC7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -2139,6 +2237,11 @@ $('#frfb').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#777DC7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -2308,6 +2411,11 @@ $('#frdrug').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#777DC7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -2524,6 +2632,11 @@ $('#fralc').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#777DC7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -2612,6 +2725,11 @@ $('#frcheat').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#777DC7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -2650,6 +2768,11 @@ $('#frcheat2').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#777DC7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -2691,6 +2814,11 @@ $('#fracc').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#8D77C7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -2903,6 +3031,11 @@ $('#frgrade').highcharts({
 	chart: {
 		type: 'column'
 	},
+	plotOptions: {
+		column: {
+			color: '#8D77C7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -3025,6 +3158,11 @@ $('#frspr').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#8D77C7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -3239,6 +3377,11 @@ $('#frsch').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#8D77C7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
@@ -3459,6 +3602,11 @@ $('#frexc').highcharts({
 		type: 'column',
 		marginLeft: 70,
 	},
+	plotOptions: {
+		column: {
+			color: '#8D77C7',
+		}
+	},
 	legend: {
 		layout: 'vertical',
 		align: 'right',
@@ -3604,6 +3752,11 @@ $('#frgoal').highcharts({
 	},
 	chart: {
 		type: 'column'
+	},
+	plotOptions: {
+		column: {
+			color: '#8D77C7',
+		}
 	},
 	legend: {
 		layout: 'vertical',
