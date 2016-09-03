@@ -5,31 +5,39 @@ $(function () {
 $('#srdemo').highcharts({
 	title: {
 		//text: 'Gender'
+	},	xAxis: {
+		categories: ['Male','Female','Other'],
 	},
-	tooltip: {
-        pointFormat: '{point.percentage:.1f}%'
+	yAxis: {
+		title: {
+			text: 'Percent of Students Polled'
+		},
+		plotLines: [{
+			value: 0,
+			width: 1,
+			color: '#808080'
+		}]
 	},
 	chart: {
-		type: 'pie',
+		type: 'column'
+	},
+	legend: {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle', 
+		borderWidth: 0,
+		enabled: false
+	},
+	tooltip: {
+		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+		footerFormat: '</table>',
+		shared: true,
+		useHTML: true
 	},
 	series: [{
-		 data: [{
-		 name: 'Male',
-		 y: 49.7,
-		 },
-		 {
-		 name: 'Female',
-		 y: 47.8,
-		 },
-		 {
-		 name: 'Other',
-		 y: 2.5,
-		 }
-		 ]
-		 }],
-
-		});
-	});
+		 name: '',
+		 data: [49.7,47.8,2.5]}]});});
 }
 function srDemoRace() {
 $(function () {
@@ -572,32 +580,41 @@ function srFch() {
 $(function () {
 $('#srfch').highcharts({
 	title: {
-		//text: 'Fave subject changed'
+		//text: 'Change in favorite subject'
+	},	xAxis: {
+		categories: ['Yes', 'No', 'I don\'t know'],
 	},
-	tooltip: {
-        pointFormat: '{point.percentage:.1f}%'
+	yAxis: {
+		title: {
+			text: 'Percent of Students Polled'
+		},
+		plotLines: [{
+			value: 0,
+			width: 1,
+			color: '#808080'
+		}]
 	},
 	chart: {
-		type: 'pie',
+		type: 'column'
+	},
+	legend: {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle', 
+		borderWidth: 0,
+		enabled: false
+	},
+	tooltip: {
+		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+		footerFormat: '</table>',
+		shared: true,
+		useHTML: true
 	},
 	series: [{
-		 data: [{
-		 name: 'Yes',
-		 y: 52.8,
-		 },
-		 {
-		 name: 'No',
-		 y: 36.0,
-		 },
-		 {
-		 name: 'I don\'t know',
-		 y: 11.2,
-		 }
-		 ]
-		 }],
+		 name: '',
+		 data: [52.8,36.0,11.2]}]});});
 
-		});
-	});
 }
 function srFchGender() {
 $(function () {
@@ -605,7 +622,7 @@ $('#srfch').highcharts({
 	title: {
 		//text: 'Change in favorite subject by gender'
 	},	xAxis: {
-		categories: ['I don\'t know','No','Yes'],
+		categories: ['Yes', 'No', 'I don\'t know'],
 	},
 	yAxis: {
 		title: {
@@ -635,9 +652,9 @@ $('#srfch').highcharts({
 	},
 	series: [{
 		 name: 'Female',
-		 data: [15.6,28.6,55.8]}, {
+		 data: [55.8,28.6,15.6]}, {
 		 name: 'Male',
-		 data: [7.5,43.8,48.8]}]});});
+		 data: [48.8,43.8,7.5]}]});});
 }
 function srImp() {
 $(function () {
@@ -887,29 +904,39 @@ $(function () {
 $('#srmen').highcharts({
 	title: {
 		//text: 'Where you diagnosed with a mental illness at stuyvesant'
+	},	xAxis: {
+		categories: ['Yes','No'],
 	},
-	tooltip: {
-        pointFormat: '{point.percentage:.1f}%'
+	yAxis: {
+		title: {
+			text: 'Percent of Students Polled'
+		},
+		plotLines: [{
+			value: 0,
+			width: 1,
+			color: '#808080'
+		}]
 	},
 	chart: {
-		type: 'pie',
-		marginLeft: 150,
-		marginRight: 150,
+		type: 'column'
+	},
+	legend: {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle', 
+		borderWidth: 0,
+		enabled: false
+	},
+	tooltip: {
+		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+		footerFormat: '</table>',
+		shared: true,
+		useHTML: true
 	},
 	series: [{
-		 data: [{
-		 name: 'Yes',
-		 y: 13.7,
-		 },
-		 {
-		 name: 'No',
-		 y: 86.3,
-		 }]
-		 }],
-
-		});
-	});	
-	
+		 name: '',
+		 data: [13.7,86.3]}]});});
 }
 
 function srAcd() {
@@ -1276,30 +1303,41 @@ $('#sragain').highcharts({
 function srAgain() {
 $(function () {
 $('#sragain').highcharts({
-	title: {
+title: {
 		//text: 'Would you choose Stuyvesant Again?'
+	},	xAxis: {
+		categories: ['Yes','No'],
 	},
-	tooltip: {
-        pointFormat: '{point.percentage:.1f}%'
+	yAxis: {
+		title: {
+			text: 'Percent of Students Polled'
+		},
+		plotLines: [{
+			value: 0,
+			width: 1,
+			color: '#808080'
+		}]
 	},
 	chart: {
-		type: 'pie',
-		marginLeft: 150,
-		marginRight: 150,
+		type: 'column'
+	},
+	legend: {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'middle', 
+		borderWidth: 0,
+		enabled: false
+	},
+	tooltip: {
+		headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+		pointFormat: '<tr>' + '<td style="padding:0"><b>{point.y:.1f} %</b></td></tr>',
+		footerFormat: '</table>',
+		shared: true,
+		useHTML: true
 	},
 	series: [{
-		 data: [{
-		 name: 'Yes',
-		 y: 89.4,
-		 },
-		 {
-		 name: 'No',
-		 y: 10.6,
-		 }]
-		 }],
-
-		});
-	});
+		 name: '',
+		 data: [89.4,10.6]}]});});
 }
 function srAgainGpa() {
 $(function () {
