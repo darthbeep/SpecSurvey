@@ -243,26 +243,26 @@ h1 {
 }
 .popup .close {
   position: absolute;
-  top: 0px;
+  top: 20px;
   right: 30px;
-  transition: all 200ms;
+  transition: all .5s ease-out;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  /*color: #333;*/
 }
 .popup .close:visited {
   position: absolute;
-  top: -10px;
+  top: 20px;
   right: 30px;
-  transition: all 200ms;
+  transition: all .5s ease-out;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  /*color: #333;*/
 }
 .popup .close:hover {
-  color: red;
+  /*color: white;*/
 }
 .popup .content {
   max-height: 400px;
@@ -302,84 +302,73 @@ h1 {
 	margin-right: auto;
 }
 /*Narrative coloring*/
-#frdemocss {
+.color1 {
   color: #7cb5ec;
   border: 2px solid #7cb5ec;
   background-color: white;
 }
-#frdemocss:hover {
+.color1:visited {
+  color: #7cb5ec;
+  border: 2px solid #7cb5ec;
+  background-color: white;
+}
+.color1:hover {
   color: white;
   background-color: #7cb5ec;
 }
-#frappcss {
+.color2 {
   color: #f7a35c;
   border: 2px solid #f7a35c;
   background-color: white;
 }
-#frappcss:hover {
+.color2:visited {
+  color: #f7a35c;
+  border: 2px solid #f7a35c;
+  background-color: white;
+}
+.color2:hover {
   color: white;
   background-color: #f7a35c;
 }
-#frmidaccss {
+.color3 {
   color: #90ee7e;
   border: 2px solid #90ee7e;
   background-color: white;
 }
-#frmidaccss:hover {
+.color3:visited {
+  color: #90ee7e;
+  border: 2px solid #90ee7e;
+  background-color: white;
+}
+.color3:hover {
   color: white;
   background-color: #90ee7e;
 }
-#frmidlifecss {
+.color4 {
   color: #7798BF;
   border: 2px solid #7798BF;
   background-color: white;
 }
-#frmidlifecss:hover {
+.color4:visited {
+  color: #7798BF;
+  border: 2px solid #7798BF;
+  background-color: white;
+}
+.color4:hover {
   color: white;
   background-color: #7798BF;
 }
-#frexcss {
+.color5 {
   color: #aaeeee;
   border: 2px solid #aaeeee;
   background-color: white;
 }
-#frexcss:hover {
+.color5:visited {
+  color: #aaeeee;
+  border: 2px solid #aaeeee;
+  background-color: white;
+}
+.color5:hover {
   color: white;
   background-color: #aaeeee;
-}
-#srdemocss {
-  color: #7cb5ec;
-  border: 2px solid #7cb5ec;
-  background-color: white;
-}
-#srdemocss:hover {
-  color: white;
-  background-color: #7cb5ec;
-}
-#sracccss {
-  color: #f7a35c;
-  border: 2px solid #f7a35c;
-  background-color: white;
-}
-#sracccss:hover {
-  color: white;
-  background-color: #f7a35c;
-}
-#srlifecss {
-  color: #90ee7e;
-  border: 2px solid #90ee7e;
-  background-color: white;
-}
-#srlifecss:hover {
-  color: white;
-  background-color: #90ee7e;
-}
-#compnarcss {
-  color: #7cb5ec;
-  border: 2px solid #7cb5ec;
-  background-color: white;
-}
-#compnarcss:hover {
-  color: white;
-  background-color: #7cb5ec;
 }
