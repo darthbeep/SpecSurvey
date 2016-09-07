@@ -136,6 +136,9 @@ h1 {
 	font-size: 18px;
 	font-family: 'Roboto Slab';
 	text-align: justify;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 65%;
 }
 .topline {
 	background-color: #fff;
@@ -180,7 +183,9 @@ h1 {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-
+h3 {
+  font-family: "Roboto Slab";
+}
 /* popup stuff*/
 
 .box {
@@ -238,8 +243,8 @@ h1 {
 
 .popup h2 {
   margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  /*color: #333;*/
+  font-family: "Merriweather",Tahoma, Arial, sans-serif;
 }
 .popup .close {
   position: absolute;
@@ -268,6 +273,7 @@ h1 {
   max-height: 400px;
   overflow: auto;
   text-align: justify;
+  font-family: "Roboto Slab";
 }
 .buttonlink {
 	display: block;

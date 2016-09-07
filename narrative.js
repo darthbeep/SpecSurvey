@@ -2,7 +2,7 @@ function frDemoNar() {
 	frHTML += "<a href = '#frdemonar' class='buttonlink color1'>Read Narrative</a>";
 	frHTML += '<div id="frdemonar" class="overlay">';
 	frHTML += '<div class="popup">';
-	frHTML += '<h2>Freshmen Demographics</h2>';
+	frHTML += '<h2 style="color: #7cb5ec;">Freshman Demographics</h2>';
 	frHTML += '<h3>By Shaina Peters</h3>'
 	frHTML += '<a class="close color1" href="#close">×</a>';
 	frHTML += '<div class="content">';
@@ -27,7 +27,7 @@ function frAppNar() {
 	frHTML += "<a href = '#frappnar' class='buttonlink color2'>Read Narrative</a>";
 	frHTML += '<div id="frappnar" class="overlay">';
 	frHTML += '<div class="popup">';
-	frHTML += '<h2>Applying to Stuyvesant</h2>';
+	frHTML += '<h2 style="color: #f7a35c;">Applying to Stuyvesant</h2>';
 	frHTML += '<h3>By Anne George</h3>';
 	frHTML += '<a class="close color2" href="#close">×</a>';
 	frHTML += '<div class="content">';
@@ -49,7 +49,7 @@ function frMidacNar() {
 	frHTML += "<a href = '#frmidacnar' class='buttonlink color3'>Read Narrative</a>";
 	frHTML += '<div id="frmidacnar" class="overlay">';
 	frHTML += '<div class="popup">';
-	frHTML += '<h2>Middle School Acedemics</h2>';
+	frHTML += '<h2 style="color: #90ee7e;">Middle School Academics</h2>';
 	frHTML += '<h3>By Sonia Epstein</h3>';
 	frHTML += '<a class="close color3" href="#close">×</a>';
 	frHTML += '<div class="content">';
@@ -73,7 +73,7 @@ function frMidlifeNar() {
 	frHTML += "<a href = '#frmidlifenar' class='buttonlink color4'>Read Narrative</a>";
 	frHTML += '<div id="frmidlifenar" class="overlay">';
 	frHTML += '<div class="popup">';
-	frHTML += '<h2>Middle School Life and Identity</h2>';
+	frHTML += '<h2 style="color: #7798BF;">Middle School Life and Identity</h2>';
 	frHTML += "<h3>By Sophie Watwood</h3>";
 	frHTML += '<a class="close color4" href="#close">×</a>';
 	frHTML += '<div class="content">';
@@ -96,7 +96,7 @@ function frExNar() {
 	frHTML += "<a href = '#frexnar' class='buttonlink color5'>Read Narrative</a>";
 	frHTML += '<div id="frexnar" class="overlay">';
 	frHTML += '<div class="popup">';
-	frHTML += '<h2>Expectations of Stuyvesant and Future Plans</h2>';
+	frHTML += '<h2 style="color: #aaeeee;">Expectations of Stuyvesant and Future Plans</h2>';
 	frHTML += "<h3>By Liam Elkind</h3>";
 	frHTML += '<a class="close color5" href="#close">×</a>';
 	frHTML += '<div class="content">';
@@ -139,7 +139,7 @@ function srDemoNar() {
 	srHTML += "<a href = '#srdemonar' class='buttonlink color1'>Read Narrative</a>";
 	srHTML += '<div id="srdemonar" class="overlay">';
 	srHTML += '<div class="popup">';
-	srHTML += '<h2>Senior Demographics</h2>';
+	srHTML += '<h2 style="color: #7cb5ec;">Senior Demographics</h2>';
 	srHTML += "<h3>By Sonia Epstein</h3>";
 	srHTML += '<a class="close color1" href="#close">×</a>';
 	srHTML += '<div class="content">';
@@ -170,7 +170,7 @@ function srAcNar() {
 	srHTML += "<a href = '#sracnar' class='buttonlink color2'>Read Narrative</a>";
 	srHTML += '<div id="sracnar" class="overlay">';
 	srHTML += '<div class="popup">';
-	srHTML += '<h2>Stuyvesant Acedemics Narrative</h2>';
+	srHTML += '<h2 style="color: #f7a35c;">Stuyvesant Acedemics Narrative</h2>';
 	srHTML += "<h3>By Danielle Eisenman</h3>";
 	srHTML += '<a class="close color2" href="#close">×</a>';
 	srHTML += '<div class="content">';
@@ -198,7 +198,7 @@ function srLifeNar() {
 	srHTML += "<a href = '#srlifenar' class='buttonlink color3'>Read Narrative</a>";
 	srHTML += '<div id="srlifenar" class="overlay">';
 	srHTML += '<div class="popup">';
-	srHTML += '<h2>Student Life and Identity</h2>';
+	srHTML += '<h2 style="color: #90ee7e;">Student Life and Identity</h2>';
 	srHTML += "<h3>By Blythe Zadrozny</h3>";
 	srHTML += '<a class="close color3" href="#close">×</a>';
 	srHTML += '<div class="content">';
@@ -219,7 +219,7 @@ function compNar() {
 	compHTML += "<a href = '#compnar' class='buttonlink color1'>Read Narrative</a>";
 	compHTML += '<div id="compnar" class="overlay">';
 	compHTML += '<div class="popup">';
-	compHTML += '<h2>Freshmen vs. Seniors: How Different Were They, Really?</h2>';
+	compHTML += '<h2 style="color: #7cb5ec;">Freshmen vs. Seniors: How Different Were They, Really?</h2>';
 	compHTML += "<h3>By Julia Ingram</h3>";
 	compHTML += '<a class="close color1" href="#close">×</a>';
 	compHTML += '<div class="content">';
